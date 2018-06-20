@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+
+    <title>Bootstrap Sandbox</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('#btn-pagina-1, #btn-pagina-reset, #btn-pagina-2').click(function () {
+            $('.collapse').collapse("hide");
+        });
+
+    });
+</script>
+
+<style>
+    .medio {
+        width: 6.5em;
+    }
+</style>
+
+
+<body>
+    <div class="container mx-auto">
+        <div class="btn-toolbar mb-2">
+            <div class="btn-group mr-2">
+                <button class="btn btn-secondary-outline" data-toggle="collapse" data-target="#collapse-btn-1">TIPOGRAFIAS</button>
+                <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse-btn-2">LINKS</button>
+                <button class="btn btn-secondary-outline" data-toggle="collapse" data-target="#collapse-btn-3">NAVEGACAÇÃO</button>
+                <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse-btn-4">CORES</button>
+            </div>
+        </div>
+        <div class="btn-toolbar mb-2">
+            <div class="btn-group mr-2">
+                <div class="btn-group mr-2">
+                    <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse-btn-5">CAIXA</button>
+                    <button class="btn btn-secondary-outline" data-toggle="collapse" data-target="#collapse-btn-6">TABELAS</button>
+                    <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse-btn-7">GOOGLE CHART</button>
+                    <button class="btn btn-secondary-outline medio" data-toggle="collapse" data-target="#collapse-btn-8">EVENTOS</button>
+                </div>
+            </div>
+        </div>
+        <div style="width: 400px">
+
+            <button id="btn-pagina-1" class="btn btn-outline-info btn-block p-10">Pagina 1</button>
+            <button id="btn-pagina-2" class="btn btn-outline-danger btn-block ">Pagina 2</button>
+            <button id="btn-pagina-reset" class="btn btn-outline-dark btn-block ">Reset</button>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="geral" id="texto-geral">
+            <div id="collapse-btn-1" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Tipografias
+                    </div>
+                    <div class="card-body">
+                        <h1 class="titulo-azul"> Título </h1>
+                        <h2 class="subtitulo mb-4"> Subtítulo</h2>
+                        <p class="primeiro-parag">Classe: Primeiro paragrafo(primeiro-parag). </p>
+                        <p class="textoinfo">Classe: Texto de apoio(textoinfo), Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                            omnis animi consectetur cupiditate dolores tempore.</p>
+                        <p class="rodape">Classe: Texto de rodape pequeno(rodape).</p>
+                        <p class="textoinfo" style="text-align: center; line-height: 18.4px; font-size: small">
+                            <strong>Conteúdo de Responsabilidade da CGEST</strong>
+                        </p>
+                        <p class="textoinfo" style="text-align: center;font-size: small;line-height: 18.4px;">
+                            <em>Coordenador de Gestão Estratégica</em>
+                            <br /> Joaquim Otávio Pereira da Silva Júnior
+                            <br /> Telefone: (61) 3043-7732
+                            <br /> E-mail: cgest@csjt.jus.br</p>
+                        <p style="text-align: justify;">&nbsp;</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="collapse-btn-2" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Links
+                    </div>
+                    <div class="card-body" style="font-size: 40px;">
+                        <a href="#">Link Comum</a>
+                        <br>
+                        <a class="link-plano" href="#">Link Plano</a>
+                        <br>
+                        <a class="link-ato" href="#">Link Ato</a>
+                    </div>
+                </div>
+            </div>
+            <div id="collapse-btn-3" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Navegação
+                    </div>
+                    <div class="card-body">
+                        <div id="tabelaAntiga">
+                            <table width="251" border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" style="text-align: center;">
+                                            <img src="http://www.csjt.jus.br/image/image_gallery?uuid=24f8be69-8844-477f-ab59-707af5c7e024&amp;groupId=5625802&amp;t=1497614975501"
+                                                width="250" height="35" alt="" />
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            <a style="color:#ddd;" href="/web/cgest/planejamento-estrategico-jt/resultados/visao-da-jt/ano-atual">
+                                                <div style="background-color:#ddd;text-align: center; padding-bottom:17px">&nbsp;</div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <a href="/web/cgest/planejamento-estrategico-jt/resultados/2015">
+                                                <img src="http://www.csjt.jus.br/image/image_gallery?uuid=75b9bbd8-6e97-4c41-9cdd-06f70e7c5b92&amp;groupId=5625802&amp;t=1497881106799"
+                                                    width="83" height="35" alt="" />
+                                            </a>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <a href="/web/cgest/planejamento-estrategico-jt/resultados/2016">
+                                                <img src="http://www.csjt.jus.br/image/image_gallery?uuid=97f007c4-2a10-48c4-9151-2d71a6864a32&amp;groupId=5625802&amp;t=1497882698635"
+                                                    width="83" height="35" alt="" />
+                                            </a>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <a href="/web/cgest/planejamento-estrategico-jt/resultados/2017">
+                                                <img src="http://www.csjt.jus.br/image/image_gallery?uuid=3606a5e2-abf0-411e-b22b-12fdde1036c1&amp;groupId=5625802&amp;t=1497709652669"
+                                                    width="83" height="35" alt="" />
+                                            </a>
+                                        </td>
+                                        <td rowspan="2" style="text-align: center; padding:10px">&nbsp;</td>
+                                        <td rowspan="1" style="text-align: center; background-color:#ddd">
+                                            <a href="/web/cgest/planejamento-estrategico-jt/resultados/visao-da-jt/ano-atual">
+                                                <img src="http://www.csjt.jus.br/image/image_gallery?uuid=116f02c0-b00d-4c4d-bead-d1d7976bbfea&amp;groupId=5625802&amp;t=1523046248737"
+                                                    width="252" height="35" alt="" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <a href="/web/cgest/planejamento-estrategico-jt/resultados">
+                                                <img src="http://www.csjt.jus.br/image/image_gallery?uuid=7fd73afe-b9bd-4ffd-9a91-6f13f710fb4b&amp;groupId=5625802&amp;t=1525115359779"
+                                                    width="83" height="35" alt="" />
+                                            </a>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <img src="http://www.csjt.jus.br/image/image_gallery?uuid=8712de99-6625-4135-9044-f73443190ee4&amp;groupId=5625802&amp;t=1526585759839"
+                                                width="83" height="35" alt="Ano não adicionado" title="Ano não adicionado" />
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <img src="http://www.csjt.jus.br/image/image_gallery?uuid=c52f3bf9-62b5-4832-aba5-e5c548f6a5c5&amp;groupId=5625802&amp;t=1526585792123"
+                                                width="83" height="35" alt="Ano não adicionado" title="Ano não adicionado" />
+                                        </td>
+                                        <td>
+                                            <a style="color:#ddd;" href="/web/cgest/planejamento-estrategico-jt/resultados/visao-da-jt/ano-atual">
+                                                <div style="background-color:#ddd;text-align: center; padding-bottom:18px">&nbsp;</div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            
+                            <div class="row" style="width: 560px; margin-left: 10em">
+                                <div class="col-sm" style="width:280px; height: 140px;" >
+                                        <div class="mt-4" style="background-color: #22293A; color: white; width:250px; height: 35px;" >
+                                            <p style="text-align: center;font-weight: 350; font-size: 22px; padding-top: 2px;">Visão Por Meta</p></div>
+                                        <div style="background-color: #ddd; width: 250px; height: 35px;">
+                                                <a href="#" class="numero-nav"><p class="cinza" style="width: 80px">2015</p></a>
+                                                <a href="#" class="numero-nav"><p class="cinza " style="width: 80px; ">2016</p></a>
+                                                <a href="#" class="numero-nav"><p class="cinza" style="width: 80px">2017</p></a>
+                                        </div>
+                                        <div style="background-color: #ddd; width: 250px; height: 35px;">
+                                                <a href="#" class="numero-nav"><p class="cinza active" style="width: 80px">2018</p></a>
+                                                <a href="#" class="numero-nav"><p class="cinza" style="width: 80px">2019</p></a>
+                                                <a href="#" class="numero-nav"><p class="cinza" style="width: 80px">2020</p></a>
+                                        </div>    
+                                </div>
+                                <div class="col-sm" style="width:280px; height: 140px;">
+                                        <div class="mt-4 cinza" style="  width:250px; height: 105px;" >
+                                                <a class="texto-nav" href="#"><p style="text-align: center; font-weight: 450 ;font-size: 22px; padding-top: 35px;">Visão da JT</p></a></a>
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                            
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="collapse-btn-4" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Cores
+                    </div>
+                    <div class="card-body">
+                        <div class="p-3 mb-2  text-white" style="background-color: #412c34">.Marsala</div>
+                        <div class="p-3 mb-2  text-white" style="background-color: #22293A">.Azul-Marinho</div>
+                        <div class="p-3 mb-2  text-white" style="background-color: #333843">.Azul-Cinza</div>
+                        <div class="p-3 mb-2  text-white" style="background-color: #313B46">.Azul-Onyx</div>
+                        <div class="p-3 mb-2  text-white" style="background-color: #323A36">.Verde-Onyx</div>
+                        <div class="p-3 mb-2  text-white" style="background-color: #3A403B">.Verde-Escuro-Oliva</div>
+                        <div class="p-3 mb-2  text-white" style="background-color: #2B4847">.Verde-Indigo</div>
+                        <div class="p-3 mb-2  text-white" style="background-color: #423E33">.Laranja-Escuro</div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="collapse-btn-5" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Tabela de documentos
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus
+                        ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus
+                        commodi.
+                    </div>
+                </div>
+            </div>
+            <div id="collapse-btn-6" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Tabelas
+                    </div>
+                    <div class="card-body">
+                           
+                    </div>
+                </div>
+            </div>
+            <div id="collapse-btn-7" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Google Chart
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus
+                        ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus
+                        commodi.
+                    </div>
+                </div>
+            </div>
+            <div id="collapse-btn-8" class="collapse mb-5">
+                <div class="card">
+                    <div class="card-header">
+                        Eventos
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus
+                        ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus
+                        commodi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
