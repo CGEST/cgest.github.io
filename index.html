@@ -9,7 +9,7 @@
         crossorigin="anonymous">
 
     <title>Bootstrap Sandbox</title>
-    <link rel="stylesheet" href="estilo.css">
+    
 </head>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -26,6 +26,203 @@
     .medio {
         width: 6.5em;
     }
+</style>
+<style>
+    /* ## RED TABLE ### */
+:root {
+    --marsala:#412c34;
+    --azul-marinho:#22293A;
+    --azul-cinza:#333843;
+    --azul-onyx:#313B46;
+    --verde-onyx:#323A36;
+    --verde-escuro-olive:#3A403B;
+    --verde-bom:#2B4847;
+    --cor-ruim:#423E33;
+
+}
+table.redTable {
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.redTable td,
+th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+
+table.redTable tbody td {
+    font-size: 15px;
+}
+
+table.redTable tr:nth-child(even) {
+    background: #DDD;
+}
+
+table.redTable thead {
+    background: #7b170f;
+    height: 10px;
+}
+
+table.redTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #7b170f;
+    height: 10px;
+}
+
+table.redTable thead th:first-child {
+    border-left: none;
+}
+
+table.redTable tfoot {
+    background: #7b170f;
+    font-size: 3px;
+}
+
+/*## PAGINAÇÃO ##*/
+
+.conteudo {
+    margin: auto;
+    width: 90%;
+    line-height: 1.5;
+}
+
+p.primeiro-parag {
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+    margin-top: -25px;
+    color: #696969;
+    font-size: larger;
+    font-size: 17.28px;
+}
+
+p.textoinfo {
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+    font-size: larger;
+    color: #696969;
+    text-align: inherit;
+    line-height: inherit;
+    font-size: 17.28px;
+}
+
+p.rodape {
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+    font-size: small;
+    text-align: center;
+    color:#666262;
+    line-height: inherit;   
+    
+}
+
+/*## TABELA DE DOCUMENTOS*/
+
+.tabela td {
+    padding: 10px;
+}
+
+.fundo-claro-tabela {
+    background: #efefef;
+}
+
+.fundo-escuro-tabela {
+    background: #e5e5e5;
+}
+
+.img-conteudo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*## LINKS ##*/
+
+a.link-plano {
+    text-decoration: none;
+    color: var(--azul-onyx);
+}
+
+a.link-plano:hover {
+    text-decoration: none;
+    color: #5d7da0;
+}
+
+a.link-ato {
+    text-decoration: underline;
+    color: var(--azul-onyx);
+}
+
+a.link-ato:hover {
+    color: #5d7da0;
+}
+
+/* */
+
+/*## TITULOS ##*/
+
+h1.titulo-azul {   
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color: var(--azul-onyx);
+    font-weight: bold;
+}
+
+h2.subtitulo {
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+    text-align: center;
+    font-size: large;
+    color: var(--marsala);
+    font-weight: bold;
+}
+/* ############## */
+
+.cinza {
+    width: 80px;
+    height: 35px;
+    Background-color: #ddd;
+    text-align: center;
+    padding-top: 1px;
+    display: inline-block;
+
+    
+}
+.cinza.active {
+    Background-color: #22293A;
+    color: white;
+}
+.cinza.active:hover {
+    Background-color: #22293A;
+    color: white;
+}
+.cinza:hover {
+    background-color: #eeeeee;
+}
+.numero-nav{
+    text-decoration: none;
+    color: #22293A;
+    font-size: 18px;
+    font-weight: 500;
+    
+
+}
+.numero-nav:hover{
+    text-decoration: none;
+    color:#22293A;  
+    
+}
+
+.texto-nav{
+    text-decoration: none;
+    color: #22293A;
+}
+.texto-nav:hover{
+    text-decoration: none;
+    color:#22293A;  
+    
+}
 </style>
 
 
